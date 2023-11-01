@@ -1,0 +1,16 @@
+# Solicita o valor do montante e o número de meses
+montante = float(input("Digite o montante de dinheiro: "))
+num_meses = int(input("Digite o número de meses: "))
+
+# Taxa de rendimento da poupança (exemplo: 0,5% ao mês)
+taxa_rendimento = 0.005  # 0,5%
+
+# Calcula o rendimento
+rendimento = montante * (taxa_rendimento * num_meses)
+
+# Calcula o novo montante após o rendimento
+novo_montante = montante + rendimento
+
+# Exibe o rendimento e o novo montante com duas casas decimais
+print(f"Rendimento em {num_meses} meses: R$ {rendimento:.2f}")
+print(f"Novo montante após o rendimento: R$ {novo_montante:.2f}")
